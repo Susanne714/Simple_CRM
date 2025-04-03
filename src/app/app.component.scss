@@ -44,10 +44,6 @@ mat-toolbar-row {
         &:focus {
             outline: none;
         }
-
-        &:active {
-            background-color: rgba(0, 0, 0, 0.2);
-        }
     }
 }
 
