@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { TooltipPosition, MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogAddUserComponent } from '../dialog-add-user/dialog-add-user.component';
 
 @Component({
   selector: 'app-user',
@@ -13,5 +15,11 @@ import { TooltipPosition, MatTooltipModule } from '@angular/material/tooltip';
 
 export class UserComponent {
   positionOptions: TooltipPosition[] = ['below', 'above', 'left', 'right'];
+
+  constructor(public dialog: MatDialog) { }
+
+  openDialog() {
+    this.dialog.open(DialogAddUserComponent)
+  }
 
 }
