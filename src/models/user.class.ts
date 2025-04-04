@@ -2,7 +2,7 @@ export class User {
     firstName: string;
     lastName: string;
     birthDate: number;
-    street: string;
+    address: string;
     postCode: number;
     city: string;
 
@@ -10,7 +10,7 @@ export class User {
         this.firstName = obj ? obj.firstName : '';
         this.lastName = obj ? obj.lastName : '';
         this.birthDate = obj ? obj.birthDate : '';
-        this.street = obj ? obj.street : '';
+        this.address = obj ? obj.street : '';
         this.postCode = obj ? obj.postCode : '';
         this.city = obj ? obj.city : '';
     }
